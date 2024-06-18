@@ -1,35 +1,68 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "SQL for Accounting Analytics",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nWhy has it been so difficult to create this site?"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "attributes.html",
-    "href": "attributes.html",
-    "title": "Key Attributes",
-    "section": "",
-    "text": "A primary key is one or more columns in a table that uniquely identifies individual rows. The primary key column(s) must contain values (i.e., they cannot be ```NULL’’’). A foreign key is a column that is a primary key in another table that is used to link two tables together."
-  },
-  {
     "objectID": "tables.html",
     "href": "tables.html",
     "title": "Tables",
     "section": "",
     "text": "Relational databases store data in two-dimensional tables representing one object or entity about which we collect and store data. Each column identifies an attribute of the object or entity the table describes, and each row identifies an instance of a unique entity or object the table describes.",
     "crumbs": [
-      "Home",
-      "Relational Database Review",
+      "Relational Databases",
       "Tables"
+    ]
+  },
+  {
+    "objectID": "normalization.html",
+    "href": "normalization.html",
+    "title": "Normalization",
+    "section": "",
+    "text": "The goal is to avoid update anomalies, insert anomalies, and delete anomalies.",
+    "crumbs": [
+      "Relational Databases",
+      "Normalization"
+    ]
+  },
+  {
+    "objectID": "normalization.html#update-anomalies",
+    "href": "normalization.html#update-anomalies",
+    "title": "Normalization",
+    "section": "Update Anomalies",
+    "text": "Update Anomalies\nCustomer address change requires updates to every occurrence of the customer address.",
+    "crumbs": [
+      "Relational Databases",
+      "Normalization"
+    ]
+  },
+  {
+    "objectID": "normalization.html#insert-anomalies",
+    "href": "normalization.html#insert-anomalies",
+    "title": "Normalization",
+    "section": "Insert Anomalies",
+    "text": "Insert Anomalies\nNew customers will not be added until they place an order, or they will be added with null values.",
+    "crumbs": [
+      "Relational Databases",
+      "Normalization"
+    ]
+  },
+  {
+    "objectID": "normalization.html#delete-anomalies",
+    "href": "normalization.html#delete-anomalies",
+    "title": "Normalization",
+    "section": "Delete Anomalies",
+    "text": "Delete Anomalies\nDeleting an order for a customer with only one purchase will result in the deletion of all customer information.",
+    "crumbs": [
+      "Relational Databases",
+      "Normalization"
+    ]
+  },
+  {
+    "objectID": "keys.html",
+    "href": "keys.html",
+    "title": "Key Attributes",
+    "section": "",
+    "text": "A primary key is one or more columns in a table that uniquely identifies individual rows. The primary key column(s) must contain values (i.e., they cannot be NULL). A foreign key is a column that is a primary key in another table that is used to link two tables together.",
+    "crumbs": [
+      "Relational Databases",
+      "Key Attributes"
     ]
   },
   {
@@ -61,69 +94,22 @@
     "section": "",
     "text": "One-to-One, One-to-Many (most common and is the case on this page), or Many-to-Many",
     "crumbs": [
-      "Home",
-      "Relational Database Review",
+      "Relational Databases",
       "Relationships"
     ]
   },
   {
-    "objectID": "normalization.html",
-    "href": "normalization.html",
-    "title": "Normalization",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "SQL for Accounting Analytics",
     "section": "",
-    "text": "The goal is to avoid update anomalies, insert anomalies, and delete anomalies.",
-    "crumbs": [
-      "Home",
-      "Relational Database Review",
-      "Normalization"
-    ]
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nWhy has it been so difficult to create this site?"
   },
   {
-    "objectID": "normalization.html#update-anomalies",
-    "href": "normalization.html#update-anomalies",
-    "title": "Normalization",
-    "section": "Update Anomalies",
-    "text": "Update Anomalies\nCustomer address change requires updates to every occurrence of the customer address.",
-    "crumbs": [
-      "Home",
-      "Relational Database Review",
-      "Normalization"
-    ]
-  },
-  {
-    "objectID": "normalization.html#insert-anomalies",
-    "href": "normalization.html#insert-anomalies",
-    "title": "Normalization",
-    "section": "Insert Anomalies",
-    "text": "Insert Anomalies\nNew customers will not be added until they place an order, or they will be added with null values.",
-    "crumbs": [
-      "Home",
-      "Relational Database Review",
-      "Normalization"
-    ]
-  },
-  {
-    "objectID": "normalization.html#delete-anomalies",
-    "href": "normalization.html#delete-anomalies",
-    "title": "Normalization",
-    "section": "Delete Anomalies",
-    "text": "Delete Anomalies\nDeleting an order for a customer with only one purchase will result in the deletion of all customer information.",
-    "crumbs": [
-      "Home",
-      "Relational Database Review",
-      "Normalization"
-    ]
-  },
-  {
-    "objectID": "keys.html",
-    "href": "keys.html",
-    "title": "Key Attributes",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "A primary key is one or more columns in a table that uniquely identifies individual rows. The primary key column(s) must contain values (i.e., they cannot be NULL). A foreign key is a column that is a primary key in another table that is used to link two tables together.",
-    "crumbs": [
-      "Home",
-      "Relational Database Review",
-      "Key Attributes"
-    ]
+    "text": "About this site"
   }
 ]
