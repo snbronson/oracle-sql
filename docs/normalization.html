@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SQL for Accounting Analytics</title>
+<title>Normalization – SQL for Accounting Analytics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -107,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">SQL for Accounting Analytics</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./tables.html">Relational Database Review</a></li><li class="breadcrumb-item"><a href="./normalization.html">Normalization</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -156,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./normalization.html" class="sidebar-item-text sidebar-link">
+  <a href="./normalization.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Normalization</span></a>
   </div>
 </li>
@@ -190,15 +190,23 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#update-anomalies" id="toc-update-anomalies" class="nav-link active" data-scroll-target="#update-anomalies">Update Anomalies</a></li>
+  <li><a href="#insert-anomalies" id="toc-insert-anomalies" class="nav-link" data-scroll-target="#insert-anomalies">Insert Anomalies</a></li>
+  <li><a href="#delete-anomalies" id="toc-delete-anomalies" class="nav-link" data-scroll-target="#delete-anomalies">Delete Anomalies</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./tables.html">Relational Database Review</a></li><li class="breadcrumb-item"><a href="./normalization.html">Normalization</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">SQL for Accounting Analytics</h1>
+<h1 class="title">Normalization</h1>
 </div>
 
 
@@ -215,11 +223,21 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
-<p>Why has it been so difficult to create this site?</p>
+<p>The goal is to avoid update anomalies, insert anomalies, and delete anomalies.</p>
+<section id="update-anomalies" class="level2">
+<h2 class="anchored" data-anchor-id="update-anomalies">Update Anomalies</h2>
+<p>Customer address change requires updates to every occurrence of the customer address.</p>
+</section>
+<section id="insert-anomalies" class="level2">
+<h2 class="anchored" data-anchor-id="insert-anomalies">Insert Anomalies</h2>
+<p>New customers will not be added until they place an order, or they will be added with null values.</p>
+</section>
+<section id="delete-anomalies" class="level2">
+<h2 class="anchored" data-anchor-id="delete-anomalies">Delete Anomalies</h2>
+<p>Deleting an order for a customer with only one purchase will result in the deletion of all customer information.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

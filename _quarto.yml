@@ -9,6 +9,22 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+  sidebar:
+    style: "floating"
+    search: true
+    title: "Contents"
+    contents:
+      - section: "Relational Databases"
+        contents:
+          - tables.qmd
+          - keys.qmd
+          - relationships.qmd
+          - normalization.qmd
+          - requirements.qmd
+      - section: "SQL Scripts"
+        contents:
+          - connection.qmd
+          - scripts.qmd
 
 format:
   html:

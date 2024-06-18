@@ -1,0 +1,9 @@
+---
+title: "Requirements"
+format: html
+---
+Relational databases store data in a set of related tables to avoid data redundancy and should have the following characteristics^[Romney, M.B., P.J. Steinbart, S.L. Summers, D.A. Wood. *Accounting Information Systems* 15th ed. Hoboken, NJ: Pearson Education, 2021.]:
+- Every column in a row of a table (i.e., every cell) must have a single value.
+- Primary keys uniquely identify rows and cannot be NULL. 
+- Foreign keys, if not NULL, must have values that correspond to the value of a primary key in another table.
+- All non-key columns in a table must describe a characteristic of the row identified by the primary key.

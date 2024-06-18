@@ -1,0 +1,4 @@
+---
+title: "Key Attributes"
+---
+A **primary key** is one or more columns in a table that uniquely identifies individual rows. The primary key column(s) must contain values (i.e., they cannot be NULL). A **foreign key** is a column that is a primary key in another table that is used to link two tables together.
