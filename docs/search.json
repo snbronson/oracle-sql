@@ -103,7 +103,11 @@
     "href": "index.html",
     "title": "SQL for Accounting Analytics",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nWhy has it been so difficult to create this site?"
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nWhy has it been so difficult to create this site?",
+    "crumbs": [
+      "Home",
+      "SQL for Accounting Analytics"
+    ]
   },
   {
     "objectID": "about.html",

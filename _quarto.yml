@@ -14,6 +14,7 @@ website:
     search: true
     title: "Contents"
     contents:
+      - index.qmd
       - section: "Relational Databases"
         contents:
           - tables.qmd
