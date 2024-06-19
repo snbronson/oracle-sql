@@ -11,6 +11,55 @@
     ]
   },
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nWhy has it been so difficult to create this site?\nWhat?",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "scripts.html",
+    "href": "scripts.html",
+    "title": "SQL Scripts",
+    "section": "",
+    "text": "aslandj wl;kj adv. ax qweor ijasdf.",
+    "crumbs": [
+      "Scripts"
+    ]
+  },
+  {
+    "objectID": "relationships.html",
+    "href": "relationships.html",
+    "title": "Relationships",
+    "section": "",
+    "text": "One-to-One, One-to-Many (most common and is the case on this page), or Many-to-Many",
+    "crumbs": [
+      "Relational Databases",
+      "Relationships"
+    ]
+  },
+  {
+    "objectID": "keys.html",
+    "href": "keys.html",
+    "title": "Key Attributes",
+    "section": "",
+    "text": "A primary key is one or more columns in a table that uniquely identifies individual rows. The primary key column(s) must contain values (i.e., they cannot be NULL). A foreign key is a column that is a primary key in another table that is used to link two tables together.",
+    "crumbs": [
+      "Relational Databases",
+      "Key Attributes"
+    ]
+  },
+  {
     "objectID": "normalization.html",
     "href": "normalization.html",
     "title": "Normalization",
@@ -55,65 +104,25 @@
     ]
   },
   {
-    "objectID": "keys.html",
-    "href": "keys.html",
-    "title": "Key Attributes",
+    "objectID": "structure.html",
+    "href": "structure.html",
+    "title": "Structure",
     "section": "",
-    "text": "A primary key is one or more columns in a table that uniquely identifies individual rows. The primary key column(s) must contain values (i.e., they cannot be NULL). A foreign key is a column that is a primary key in another table that is used to link two tables together.",
+    "text": "Relational databases store data in a set of related tables to avoid data redundancy and should have the following characteristics1:",
     "crumbs": [
       "Relational Databases",
-      "Key Attributes"
+      "Structure"
     ]
   },
   {
-    "objectID": "requirements.html",
-    "href": "requirements.html",
-    "title": "Requirements",
-    "section": "",
-    "text": "Relational databases store data in a set of related tables to avoid data redundancy and should have the following characteristics1: - Every column in a row of a table (i.e., every cell) must have a single value. - Primary keys uniquely identify rows and cannot be NULL. - Foreign keys, if not NULL, must have values that correspond to the value of a primary key in another table. - All non-key columns in a table must describe a characteristic of the row identified by the primary key.",
-    "crumbs": [
-      "Relational Databases",
-      "Requirements"
-    ]
-  },
-  {
-    "objectID": "requirements.html#footnotes",
-    "href": "requirements.html#footnotes",
-    "title": "Requirements",
+    "objectID": "structure.html#footnotes",
+    "href": "structure.html#footnotes",
+    "title": "Structure",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nRomney, M.B., P.J. Steinbart, S.L. Summers, D.A. Wood. Accounting Information Systems 15th ed. Hoboken, NJ: Pearson Education, 2021.↩︎",
     "crumbs": [
       "Relational Databases",
-      "Requirements"
+      "Structure"
     ]
-  },
-  {
-    "objectID": "relationships.html",
-    "href": "relationships.html",
-    "title": "Relationships",
-    "section": "",
-    "text": "One-to-One, One-to-Many (most common and is the case on this page), or Many-to-Many",
-    "crumbs": [
-      "Relational Databases",
-      "Relationships"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "SQL for Accounting Analytics",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nWhy has it been so difficult to create this site?",
-    "crumbs": [
-      "Home",
-      "SQL for Accounting Analytics"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
   }
 ]

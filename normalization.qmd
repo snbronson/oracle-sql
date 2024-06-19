@@ -2,12 +2,16 @@
 title: "Normalization"
 ---
 The goal is to avoid update anomalies, insert anomalies, and delete anomalies.
+![Table used to illustrate anomalies](images/nornalization.png)
 
 ## Update Anomalies
 Customer address change requires updates to every occurrence of the customer address.
+![Table illustrating the update anomaly](images/update-anomaly.png)
 
 ## Insert Anomalies
 New customers will not be added until they place an order, or they will be added with null values.
+![Table illustrating the insert anomaly](images/insert-anomaly.png)
 
 ## Delete Anomalies
 Deleting an order for a customer with only one purchase will result in the deletion of all customer information.
+![Table illustrating the delete anomaly](images/delete-anomaly.png)

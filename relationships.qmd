@@ -2,3 +2,4 @@
 title: "Relationships"
 ---
 **One-to-One**, **One-to-Many** (most common and is the case on this page), or **Many-to-Many**
+![Relationships between tables](images/relationships.png)
