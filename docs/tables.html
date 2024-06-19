@@ -161,12 +161,26 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">SQL Scripts</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+ <span class="menu-text">connection.qmd</span>
+  </li>
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./scripts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Scripts</span></a>
+ <span class="menu-text">SQL Scripts</span></a>
   </div>
 </li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -197,7 +211,11 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Relational databases store data in two-dimensional tables representing one object or entity about which we collect and store data. Each column identifies an attribute of the object or entity the table describes, and each row identifies an instance of a unique entity or object the table describes.</p>
+<p>Relational databases store data in two-dimensional tables representing one object or entity about which we collect and store data.</p>
+<ul>
+<li>Each column identifies an attribute of the object or entity the table describes.</li>
+<li>Each row identifies an instance of a unique entity or object the table describes.</li>
+</ul>
 
 
 

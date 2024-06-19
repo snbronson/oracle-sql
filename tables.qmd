@@ -1,4 +1,7 @@
 ---
 title: "Tables"
 ---
-Relational databases store data in two-dimensional tables representing one object or entity about which we collect and store data. Each column identifies an attribute of the object or entity the table describes, and each row identifies an instance of a unique entity or object the table describes.
+Relational databases store data in two-dimensional tables representing one object or entity about which we collect and store data.
+
+- Each column identifies an attribute of the object or entity the table describes.
+- Each row identifies an instance of a unique entity or object the table describes.

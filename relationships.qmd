@@ -2,4 +2,5 @@
 title: "Relationships"
 ---
 **One-to-One**, **One-to-Many** (most common and is the case on this page), or **Many-to-Many**
-![Relationships between tables](images/relationships.png)
+
+![Figure 2: CustID, the primary key in the Customer table, and CustID, the foreign key in the Sales Order table form a relationship between the two tables. ](images/relationships.png)

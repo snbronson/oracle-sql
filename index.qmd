@@ -2,10 +2,8 @@
 title: "Introduction"
 ---
 
-This is a Quarto website.
+## head2
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+![Delete](images/delete-anomaly.png)
 
-Why has it been so difficult to create this site?
-
-What?
+Test adding text
