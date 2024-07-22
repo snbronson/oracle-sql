@@ -1,0 +1,49 @@
+---
+title: "Establish Connection"
+---
+You will use SQL Developer software installed in the KU Virtual Lab (AVD) to access your own assigned user schema and to run Structured Query Language (SQL) queries. In our Oracle database, this schema represents your personal space.
+
+Your user has the privileges necessary to add or remove certain database objects (e.g., tables and views) within your schema. I allocated each schema 100 MB of storage, which is more than enough space for this course.
+
+To begin the setup process, you need to know your KU Online ID. This ID usually includes your first and last initial, each followed by three digits (e.g., b236z280), and it is what you use to access most of KU’s technology resources. Your KU Online ID will serve as your Username (and the name of your schema) in our database. You will need this ID as you complete the steps outlined below.
+
+To access the database and run queries, you need to create a connection between the SQL Developer software on the AVD and your schema in our Oracle database.
+
+1.	Login to the AVD by following the instructions provided on Canvas in **Modules** > **Start Here** > **3. Access KU’s Virtual Lab / Azure Virtual Desktop**.
+
+2.	Launch the SQL Developer application on the AVD. If a dialog box appears asking about importing settings from a previous installation of SQL Developer, click **No**. If the SQL Developer Welcome Page appears with text that is difficult to read once the application launches and finishes loading, uncheck “Show on startup” at the bottom of the window, and close and re-launch SQL Developer.
+
+3.	Click on the green + button in “Connections” in the upper left corner. The New / Select Database Connection dialog will open. 
+
+4.	Enter the information provided in Canvas:
+    * Name: **A746 DB Connection**
+    * Username: Enter your KU Online ID
+    * Password: Enter the password shared on Canvas (make sure the Save Password box is checked)
+    * Connection Type: See Canvas
+    * Hostname: See Canvas
+    * Port: See Canvas
+    * Select Service name and enter the information in Canvas
+
+    At this point, your New / Select Database Connection window should look similar (but not identical) to the image shared on Canvas. Note that you will not have any connections listed in left hand portion of the window yet unless you previously used SQL Developer and added connections.
+
+5. Test your connection by clicking on the **Test** button. If you see “Status: Success” under the list of connections, proceed to the next step. If your connection is not successful, double check your settings based on the instructions in the previous step. If you continue to have problems, contact me through Microsoft Teams for assistance.
+
+6. Click the **Save** button. Note that you should now see one connection (the one connection that you just created), not four connections as you see in the image above.
+
+7. Click the **Connect** button. The New / Select Database Connection dialog should disappear, and your cursor should be in a blank SQL worksheet.
+
+8. You will learn how to write SQL scripts to run queries within SQL Developer. When we write queries, it is often helpful to have line numbers associated with each line of a query to help when debugging issues with the syntax in your script. In the SQL Developer menu, navigate to **Tools** > **Preferences** > **Code Editor** > **Line Gutter**, and check the box next to **Show Line Numbers**.
+
+    [INSERT IMAGE]
+
+    Click **OK** to apply the setting.
+
+9. You should now see line numbers in the code editor (see below) where you will write queries.
+
+    [INSERT IMAGE]
+
+10.  Execute the sample command you see below (retype the SQL statement in the Worksheet and click on the green triangle button). Compare your Query Result to the Query Result below.
+
+11. Execute the same command you executed in the step above; however, this time click the button to the right of the button you clicked in the previous step. While the report contents are the same, the report format and location are different. 
+
+    [INSERT IMAGE]

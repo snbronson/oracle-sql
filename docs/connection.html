@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Introduction – SQL for Accounting Analytics</title>
+<title>Establish Connection – SQL for Accounting Analytics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./tables.html" rel="next">
+<link href="./scripts.html" rel="next">
+<link href="./structure.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -93,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Introduction</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./connection.html">SQL Scripts</a></li><li class="breadcrumb-item"><a href="./connection.html">Establish Connection</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -115,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
@@ -171,8 +172,8 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./connection.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Connect SQL Developer to the Oracle Database</span></a>
+  <a href="./connection.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Establish Connection</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -194,9 +195,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./connection.html">SQL Scripts</a></li><li class="breadcrumb-item"><a href="./connection.html">Establish Connection</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Introduction</h1>
+<h1 class="title">Establish Connection</h1>
 </div>
 
 
@@ -213,8 +214,37 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This is a Quarto website, and IT IS CURRENTLY UNDER CONSTRUCTION!</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+<p>You will use SQL Developer software installed in the KU Virtual Lab (AVD) to access your own assigned user schema and to run Structured Query Language (SQL) queries. In our Oracle database, this schema represents your personal space.</p>
+<p>Your user has the privileges necessary to add or remove certain database objects (e.g., tables and views) within your schema. I allocated each schema 100 MB of storage, which is more than enough space for this course.</p>
+<p>To begin the setup process, you need to know your KU Online ID. This ID usually includes your first and last initial, each followed by three digits (e.g., b236z280), and it is what you use to access most of KU’s technology resources. Your KU Online ID will serve as your Username (and the name of your schema) in our database. You will need this ID as you complete the steps outlined below.</p>
+<p>To access the database and run queries, you need to create a connection between the SQL Developer software on the AVD and your schema in our Oracle database.</p>
+<ol type="1">
+<li><p>Login to the AVD by following the instructions provided on Canvas in <strong>Modules</strong> &gt; <strong>Start Here</strong> &gt; <strong>3. Access KU’s Virtual Lab / Azure Virtual Desktop</strong>.</p></li>
+<li><p>Launch the SQL Developer application on the AVD. If a dialog box appears asking about importing settings from a previous installation of SQL Developer, click <strong>No</strong>. If the SQL Developer Welcome Page appears with text that is difficult to read once the application launches and finishes loading, uncheck “Show on startup” at the bottom of the window, and close and re-launch SQL Developer.</p></li>
+<li><p>Click on the green + button in “Connections” in the upper left corner. The New / Select Database Connection dialog will open.</p></li>
+<li><p>Enter the information provided in Canvas:</p>
+<ul>
+<li>Name: <strong>A746 DB Connection</strong></li>
+<li>Username: Enter your KU Online ID</li>
+<li>Password: Enter the password shared on Canvas (make sure the Save Password box is checked)</li>
+<li>Connection Type: See Canvas</li>
+<li>Hostname: See Canvas</li>
+<li>Port: See Canvas</li>
+<li>Select Service name and enter the information in Canvas</li>
+</ul>
+<p>At this point, your New / Select Database Connection window should look similar (but not identical) to the image shared on Canvas. Note that you will not have any connections listed in left hand portion of the window yet unless you previously used SQL Developer and added connections.</p></li>
+<li><p>Test your connection by clicking on the <strong>Test</strong> button. If you see “Status: Success” under the list of connections, proceed to the next step. If your connection is not successful, double check your settings based on the instructions in the previous step. If you continue to have problems, contact me through Microsoft Teams for assistance.</p></li>
+<li><p>Click the <strong>Save</strong> button. Note that you should now see one connection (the one connection that you just created), not four connections as you see in the image above.</p></li>
+<li><p>Click the <strong>Connect</strong> button. The New / Select Database Connection dialog should disappear, and your cursor should be in a blank SQL worksheet.</p></li>
+<li><p>You will learn how to write SQL scripts to run queries within SQL Developer. When we write queries, it is often helpful to have line numbers associated with each line of a query to help when debugging issues with the syntax in your script. In the SQL Developer menu, navigate to <strong>Tools</strong> &gt; <strong>Preferences</strong> &gt; <strong>Code Editor</strong> &gt; <strong>Line Gutter</strong>, and check the box next to <strong>Show Line Numbers</strong>.</p>
+<p>[INSERT IMAGE]</p>
+<p>Click <strong>OK</strong> to apply the setting.</p></li>
+<li><p>You should now see line numbers in the code editor (see below) where you will write queries.</p>
+<p>[INSERT IMAGE]</p></li>
+<li><p>Execute the sample command you see below (retype the SQL statement in the Worksheet and click on the green triangle button). Compare your Query Result to the Query Result below.</p></li>
+<li><p>Execute the same command you executed in the step above; however, this time click the button to the right of the button you clicked in the previous step. While the report contents are the same, the report format and location are different.</p>
+<p>[INSERT IMAGE]</p></li>
+</ol>
 
 
 
@@ -641,10 +671,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./structure.html" class="pagination-link" aria-label="Structure">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Structure</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./tables.html" class="pagination-link" aria-label="Tables">
-        <span class="nav-page-text">Tables</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./scripts.html" class="pagination-link" aria-label="SQL Scripts">
+        <span class="nav-page-text">SQL Scripts</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
